@@ -55,13 +55,13 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-rest-webmvc</artifactId>
-			<version>3.7.7</version>
+			<version>3.2.0.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
-			<version>2.7.7</version>
+			<version>2.2.0.RELEASE</version>
 		</dependency>
 		
 		<!-- Hibernate / JPA -->
@@ -92,7 +92,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.1</version>
+			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
 		
@@ -112,7 +112,7 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>10.0.13</version>
+				<version>9.4.49.v20220914</version>
 			</plugin>
 		</plugins>
 	</build>
