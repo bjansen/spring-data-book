@@ -30,6 +30,7 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  * Spring JavaConfig configuration class to setup a Spring container and infrastructure components like a
@@ -40,6 +41,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @ComponentScan
 @EnableJpaRepositories
+@EnableWebMvc
 @EnableTransactionManagement
 class ApplicationConfig {
 
