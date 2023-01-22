@@ -25,12 +25,12 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
  * {@link ApplicationConfig} class for repository setup. Beyond that it will deploy a
  * {@link RepositoryRestExporterServlet} to export the repositories defined in {@link ApplicationConfig} via a REST
  * interface.
- * 
+ *
  * @author Oliver Gierke
  */
 public class RestWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-	/* 
+	/*
 	 * (non-Javadoc)
 	 * @see org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer#getRootConfigClasses()
 	 */
@@ -39,7 +39,7 @@ public class RestWebApplicationInitializer extends AbstractAnnotationConfigDispa
 		return new Class<?>[] { ApplicationConfig.class };
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
 	 * @see org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer#getServletConfigClasses()
 	 */
@@ -48,12 +48,12 @@ public class RestWebApplicationInitializer extends AbstractAnnotationConfigDispa
 		return new Class<?>[] { RepositoryRestMvcConfiguration.class };
 	}
 
-	/* 
+	/*
 	 * (non-Javadoc)
 	 * @see org.springframework.web.servlet.support.AbstractDispatcherServletInitializer#getServletMappings()
 	 */
 	@Override
 	protected String[] getServletMappings() {
-		return new String[] { "/" };
+		return new String[] { "/api/*" };
 	}
 }
